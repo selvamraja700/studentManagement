@@ -5,11 +5,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    // ==== Student Class ====
+
     static class Student {
         private int id;
         private String name;
-        private double[] marks; // array to store 5 marks
+        private double[] marks; 
         private double total;
         private double average;
 
@@ -71,7 +71,7 @@ public class Main {
         }
     }
 
-    // ==== StudentManager Class ====
+
     static class StudentManager {
         private ArrayList<Student> studentList = new ArrayList<>();
         private Scanner sc = new Scanner(System.in);
@@ -150,7 +150,7 @@ public class Main {
         }
     }
 
-    // ==== Main Method ====
+    
     public static void main(String[] args) {
         StudentManager manager = new StudentManager();
         Scanner sc = new Scanner(System.in);
@@ -187,7 +187,7 @@ public class Main {
             }
         } while (choice != 5);
 
-        sc.close(); // Close scanner to prevent resource leak
-        manager.closeScanner(); // Close internal scanner
+        sc.close(); 
+        manager.closeScanner(); 
     }
 }
